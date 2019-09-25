@@ -1,0 +1,117 @@
+/*Name: Saurav Jangir Section:T-TR(7:30pm-9:15pm)
+In this file many classes and ids are created. These classes and ids are used in the HTML 
+for giving a style to the containers(div,span).*/
+* {
+   margin: 0;
+   padding: 0;
+}
+body{
+	background-image: url("background.png");
+}
+#banner{
+	background-image: url("bannerbackground.png");
+	background-repeat: repeat-x;
+}
+#imgstyle{
+	/*we can use this also instead of repeat but this way our image pixel will stretch and image will be not clear.
+	width: 100%;*/
+	background-repeat: repeat-x;
+}
+#title{
+	font: 24pt arial, sans-serif ;
+	text-align: center;
+
+}
+#content{
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	border: 4px solid gray;
+}
+#left{
+	position: absolute;
+	width: 550px;
+}
+#rottenbg{
+	background-image: url("rottenbackground.png");
+	background-repeat: repeat-x;	
+}
+#reviewspan1{
+	color: red;
+	font-weight: bold;
+	vertical-align: text-bottom;
+	font: 48pt arial, sans-serif;
+
+}
+#rotten{
+	background-repeat: repeat-x;
+}
+#reviewspan{
+	font-size: 8pt;
+	color: white;
+	font-weight: normal;
+	vertical-align: text-top;
+}
+#column{
+	column-count: 2;
+	column-gap: 2%;
+	padding: 2%;
+	margin: 2%;
+
+}
+.box{
+	position: relative;
+	display: inline-block;
+	width: 230px;
+	height: auto;
+  	border: 2px solid gray;
+  	font-size: 8pt;
+  	background-color: #E1D697;
+  	padding: 8px;
+  	font-size: 8pt;
+  	font-weight: bold;
+}
+.icon{
+	float: left;
+	margin-right: 5px;
+}
+.critic{
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 3em;
+}
+#right{
+	float: right;
+	width: 250px;
+	height: 100%;
+	background-color: #A2B964;
+}
+#rightoverview{
+	padding: 10px;
+	font: 8pt arial,sans-serif;
+	line-height: 15px;
+}
+dt{
+	font-weight: bold;
+}
+#below{
+	background-color: #A2B964;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+
+}
+#validator{
+	float: right;
+	display: inline-block;
+}
+#overviewimg{
+	padding: 0px;
+}
+.italic{
+	font-style: italic;
+}
