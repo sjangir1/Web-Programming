@@ -1,0 +1,89 @@
+body{
+
+    background-color: #494c4e;
+    background-repeat: no-repeat;
+    display: grid;
+    margin:0;
+    grid-template-rows: 3;
+    grid-template-areas: "main"
+    "buttons"
+    "inst";
+}
+
+.main{
+    grid-area: main;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.main h1{
+    color: #e5e6eb;
+    font-weight: 2000;
+    font-size: 50px;
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+}
+
+.buttons{
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 3;
+    
+    
+    grid-template-areas: "btn btn btn";
+}
+.inst{
+    grid-area: inst;
+    justify-self: center;
+    
+}
+.buttons a,#again{
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    display: block;       
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    /*border-radius: 5px;*/
+}
+
+#easy,#again{
+    background-color: #eeeeee;
+    
+    
+}
+#med{
+    background-color: #cccccc;
+    
+    
+}
+#pro{
+    background-color: #6e7f80;
+    
+    
+}
+#inst{
+    padding: 20px;
+    background-color: cadetblue;
+    color: black;
+}
+
+a:hover{
+    transform: scale(0.7);
+    transition-duration: 0.1s;
+    opacity: 0.8;
+}
